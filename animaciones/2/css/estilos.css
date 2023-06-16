@@ -1,0 +1,41 @@
+
+body{
+    background-color: gray;
+}
+.iconos{
+    display: flex;
+    column-gap: 25px;
+}
+.icono{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+
+    transition-duration: 0.25s;
+}
+.icono :hover{
+    outline-offset: 4px;
+}
+.icono i{
+    margin: auto;
+}
+.icono :hover i{
+    animation: shake 0.25s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+
+}
